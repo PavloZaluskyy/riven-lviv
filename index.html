@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
     
-    <!-- ТИТУЛ СТОРІНКИ (SEO-оптимізований: Ключове слово + Гео + Бренд/Перевага) -->
-    <title>РІВЕНЬ | Професійне укладання плитки та керамограніту у Львові</title>
+    <!-- ТИТУЛ СТОРІНКИ (SEO-оптимізований) -->
+    <title id="seo-title">РІВЕНЬ | Професійне укладання плитки та керамограніту у Львові</title>
     
     <!-- МЕТА-ТЕГИ ДЛЯ ПОШУКОВИХ СИСТЕМ -->
-    <meta name="description" content="Шукаєте професійного плиточника у Львові? Пропонуємо якісне укладання великоформатного керамограніту, мозаїки та складних вхідних груп за договором. Чиста робота без пилу, запил під 45°. Дивіться реальні роботи!">
+    <meta name="description" id="seo-description" content="Шукаєте професійного плиточника у Львові? Пропонуємо якісне укладання великоформатного керамограніту, мозаїки та складних вхідних груп за договором. Чиста робота без пилу, запил під $45^\circ$. Дивіться реальні роботи!">
     <meta name="keywords" content="плиточник львів, укладання плитки львів, ремонт сходів львів, плиточник львів ціни, укладання керамограніту львів, майстер по плитці львів, запил під 45 львів, вхідна група плитка">
     <link rel="canonical" href="https://lviv-tile-works.dp.ua/">
 
-    <!-- OPEN GRAPH (Для красивого відображення в соцмережах та месенджерах) -->
+    <!-- OPEN GRAPH -->
     <meta property="og:locale" content="uk_UA">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Професійне укладання плитки та керамограніту у Львові">
-    <meta property="og:description" content="Якісне укладання плитки за договором та з гарантією. Запил під 45°, укладання вхідних груп та терас. Дивіться наше портфоліо.">
+    <meta property="og:description" content="Якісне укладання плитки за договором та з гарантією. Запил під $45^\circ$, укладання вхідних груп та терас. Дивіться наше портфоліо.">
     <meta property="og:url" content="https://lviv-tile-works.dp.ua/">
-    <meta property="og:image" content="image_acb20a.jpg">
+    <meta property="og:image" content="./img/banner.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:site_name" content="РІВЕНЬ Плиточні Роботи">
@@ -28,18 +28,18 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Плиточник Львів | Професійне укладання плитки">
     <meta name="twitter:description" content="Укладання керамограніту, вхідних груп у Львові. Чиста робота з пилососом, фіксований кошторис.">
-    <meta name="twitter:image" content="image_acb20a.jpg">
+    <meta name="twitter:image" content="./img/banner.jpg">
 
-    <!-- СТРУКТУРОВАНІ ДАНІ SCHEMA.ORG (JSON-LD) - Ключовий фактор для локального SEO -->
+    <!-- СТРУКТУРОВАНІ ДАНІ SCHEMA.ORG (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
       "name": "РІВЕНЬ Плиточні Роботи",
-      "image": "image_acb20a.jpg",
+      "image": "./img/banner.jpg",
       "@id": "https://lviv-tile-works.dp.ua/#business",
       "url": "https://lviv-tile-works.dp.ua/",
-      "telephone": "+380671234567",
+      "telephone": "+380679932110",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
@@ -111,7 +111,16 @@
                               linear-gradient(90deg, rgba(30, 41, 59, 0.015) 1px, transparent 1px);
             background-size: 40px 40px;
         }
-        /* Оптимізація плавності скролу */
+        /* Візуальне підсвічування елементів під час редагування */
+        .editable-active {
+            outline: 2px dashed #EA580C !important;
+            outline-offset: 4px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .editable-active:hover {
+            background-color: rgba(234, 88, 12, 0.05);
+        }
         @media (prefers-reduced-motion: reduce) {
             html {
                 scroll-behavior: auto;
@@ -133,7 +142,7 @@
                     </div>
                     <div>
                         <span class="font-space font-bold text-xl text-brandDark tracking-tight">РІВЕНЬ</span>
-                        <span class="block text-[10px] text-brandOrange font-bold tracking-widest uppercase -mt-1">Works</span>
+                        <span class="block text-[10px] text-brandOrange font-bold tracking-widest uppercase -mt-1 editable" id="logo-subtext">Плиточні роботи</span>
                     </div>
                 </a>
 
@@ -150,7 +159,7 @@
                 <div class="flex items-center gap-4">
                     <a href="tel:+380679932110" class="hidden lg:inline-flex items-center gap-2 font-bold text-brandDark hover:text-brandOrange transition-colors" aria-label="Подзвонити нам">
                         <i class="fa-solid fa-phone text-brandOrange" aria-hidden="true"></i>
-                        <span>(067) 993-21-10</span>
+                        <span class="editable" id="phone-text-header">(067) 993-21-10</span>
                     </a>
                     <a href="#calculator" class="hidden sm:inline-flex bg-brandOrange hover:bg-orange-700 text-white font-bold px-5 py-2.5 rounded-lg text-sm shadow-md shadow-brandOrange/10 transition-all duration-200" aria-label="Отримати швидкий розрахунок вартості">
                         Швидкий прорахунок
@@ -186,7 +195,7 @@
             <div class="pt-4 flex flex-col gap-3">
                 <a href="tel:+380679932110" class="flex items-center justify-center gap-2 font-bold text-brandDark py-3 bg-slate-100 rounded-xl hover:text-brandOrange transition-colors" aria-label="Подзвонити нам">
                     <i class="fa-solid fa-phone text-brandOrange"></i>
-                    <span>(067) 993-21-10</span>
+                    <span class="editable" id="phone-text-mobile">(067) 993-21-10</span>
                 </a>
                 <a href="#calculator" class="mobile-menu-link block text-center bg-brandOrange hover:bg-orange-700 text-white font-bold py-3.5 rounded-xl text-sm shadow-md transition-colors">
                     Швидкий прорахунок
@@ -199,26 +208,26 @@
     <main role="main">
 
         <!-- 1. ГОЛОВНИЙ ЕКРАН (HERO SECTION) -->
-       <section id="hero" class="py-10 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+        <section id="hero" class="py-10 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
             <div class="max-w-7xl mx-auto lg:grid lg:grid-cols-12 lg:gap-12 items-center">
                 
                 <div class="lg:col-span-6 space-y-6">
                     <div class="flex">
                         <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-orange-50 text-brandOrange border border-orange-100">
-                            <i class="fa-solid fa-shield-check" aria-hidden="true"></i> Офіційна гарантія за договором у Львові
+                            <i class="fa-solid fa-shield-check" aria-hidden="true"></i> <span class="editable" id="hero-badge">Офіційна гарантія за договором у Львові</span>
                         </span>
                     </div>
                     
-                    <h1 class="font-space font-bold text-3xl sm:text-5xl lg:text-6xl text-brandDark leading-tight tracking-tight">
+                    <h1 class="font-space font-bold text-3xl sm:text-5xl lg:text-6xl text-brandDark leading-tight tracking-tight editable" id="hero-title">
                         Професійне укладання плитки у <span class="text-brandOrange">Львові</span> без пилу та бруду
                     </h1>
                     
-                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed">
-                        Шукаєте ідеально рівні шви та бездоганний запил кутів під 45°? Працюємо за договором з будь-якими форматами: від витонченої мозаїки до керамограніту великого розміру 120х60. Повністю прибираємо та виносимо все будівельне сміття після завершення проекту.
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed editable" id="hero-description">
+                        Шукаєте ідеально рівні шви та бездоганний запил кутів під $45^\circ$? Працюємо за договором з будь-якими форматами: від витонченої мозаїки до керамограніту великого розміру $120 \times 60$. Повністю прибираємо та виносимо все будівельне сміття після завершення проекту.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                        <a href="tel:+380671234567" class="inline-flex justify-center items-center bg-brandOrange hover:bg-orange-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brandOrange/20 transition-all duration-200 transform hover:-translate-y-0.5" aria-label="Зателефонувати майстру напряму">
+                        <a href="tel:+380679932110" class="inline-flex justify-center items-center bg-brandOrange hover:bg-orange-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brandOrange/20 transition-all duration-200 transform hover:-translate-y-0.5" aria-label="Зателефонувати майстру напряму">
                             <i class="fa-solid fa-phone-volume mr-2" aria-hidden="true"></i> Подзвонити майстру
                         </a>
                         <a href="#prices" class="inline-flex justify-center items-center bg-white border border-slate-200 hover:border-slate-300 text-brandDark font-semibold px-8 py-4 rounded-xl transition-all duration-200">
@@ -237,10 +246,10 @@
                             decoding="async"
                             class="w-full h-full object-cover"
                         >
-                        <!-- ОНОВЛЕНА ПЛАШКА: Сценарій 1 (Точний фреймінг портфоліо робіт) -->
+                        <!-- ПЛАШКА: Сценарій 1 (Точний фреймінг портфоліо робіт) -->
                         <div class="absolute bottom-4 left-4 right-4 sm:right-auto sm:bottom-6 sm:left-6 bg-brandDark/95 backdrop-blur-md text-white p-4 rounded-xl border border-slate-700 shadow-xl max-w-sm sm:max-w-xs">
                             <span class="text-xs text-brandOrange font-bold tracking-wider uppercase">РЕАЛЬНИЙ ОБ'ЄКТ У ЛЬВОВІ</span>
-                            <p class="text-xs sm:text-sm font-medium mt-1">Облицювання вхідних сходів котеджу керамогранітом із чистим запилом кутів під 45°</p>
+                            <p class="text-xs sm:text-sm font-medium mt-1 editable" id="hero-banner-caption">Облицювання вхідних сходів котеджу керамогранітом із чистим запилом кутів під $45^\circ$</p>
                         </div>
                     </div>
                 </div>
@@ -253,8 +262,8 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
                     <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Переваги сервісу</span>
-                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark">Якісний ремонт без пилу, стресу та переплат</h2>
-                    <p class="text-slate-500 text-sm sm:text-lg">Ми цінуємо ваш час та репутацію вашого дому. Кожен етап роботи виконується суворо за будівельними ДБН стандартами.</p>
+                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark editable" id="why-us-title">Якісний ремонт без пилу, стресу та переплат</h2>
+                    <p class="text-slate-500 text-sm sm:text-lg editable" id="why-us-subtitle">Ми цінуємо ваш час та репутацію вашого дому. Кожен етап роботи виконується суворо за будівельними ДБН стандартами.</p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
@@ -263,8 +272,8 @@
                         <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm" aria-hidden="true">
                             <i class="fa-solid fa-gem text-xl sm:text-2xl"></i>
                         </div>
-                        <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3">Кути під 45° без сколів</h3>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3 editable" id="feature-title-1">Кути під $45^\circ$ без сколів</h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed editable" id="feature-desc-1">
                             Виконуємо чистий запил зовнішніх кутів на професійному станку-плиткорізі з водяним охолодженням. Ніяких пластикових куточків чи нерівних зазорів.
                         </p>
                     </article>
@@ -273,8 +282,8 @@
                         <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm" aria-hidden="true">
                             <i class="fa-solid fa-broom text-xl sm:text-2xl"></i>
                         </div>
-                        <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3">Без бруду та пилу</h3>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3 editable" id="feature-title-2">Без бруду та пилу</h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed editable" id="feature-desc-2">
                             Ріжемо плитку з використанням промислового будівельного пилососа Karcher. Щодня після закінчення зміни прибираємо робочу зону та виносимо сміття.
                         </p>
                     </article>
@@ -283,8 +292,8 @@
                         <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm" aria-hidden="true">
                             <i class="fa-solid fa-file-invoice-dollar text-xl sm:text-2xl"></i>
                         </div>
-                        <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3">Фіксований кошторис</h3>
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3 editable" id="feature-title-3">Фіксований кошторис</h3>
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed editable" id="feature-desc-3">
                             Кінцева вартість укладання плитки затверджується за результатами заміру і прописується в договорі. Вона залишається незмінною в процесі роботи.
                         </p>
                     </article>
@@ -299,8 +308,8 @@
                 
                 <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
                     <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Реалізовані об'єкти</span>
-                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark">Наші роботи крупним планом</h2>
-                    <p class="text-slate-500 text-sm sm:text-base">Ми групуємо портфоліо за реальними об'єктами. Ви можете переглянути всі етапи та ракурси кожного замовлення.</p>
+                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark editable" id="portfolio-title">Наші роботи крупним планом</h2>
+                    <p class="text-slate-500 text-sm sm:text-base editable" id="portfolio-subtitle">Ми групуємо портфоліо за реальними об'єктами. Ви можете переглянути всі етапи та ракурси кожного замовлення.</p>
                 </div>
 
                 <!-- КЕЙС №1 (ПОВНІСТЮ ІНТЕРАКТИВНИЙ ТА СКАЛЬОВАНИЙ БЛОК) -->
@@ -351,7 +360,7 @@
                                 data-src="./img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg"
                                 aria-label="Переглянути фото 4"
                             >
-                                <img src="/img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg" alt="Зарізка кутів під 45 на клумбі крупним планом" class="w-full h-full object-cover pointer-events-none">
+                                <img src="./img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg" alt="Зарізка кутів під 45 на клумбі крупним планом" class="w-full h-full object-cover pointer-events-none">
                             </button>
                             <button 
                                 class="aspect-square rounded-xl overflow-hidden border-2 border-transparent hover:border-slate-300 transition-all duration-200 focus:outline-none thumb-button" 
@@ -366,31 +375,31 @@
                     <!-- Права колонка: Деталі об'єкта та специфікація -->
                     <article class="lg:col-span-5 space-y-6 lg:pl-4">
                         <div class="space-y-2">
-                            <span class="inline-block bg-orange-100 text-brandOrange font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider">Кейс: Брюховичі, Львівська обл.</span>
-                            <h3 class="font-space font-bold text-2xl text-brandDark">Облицювання сходів котеджу морозостійким керамогранітом</h3>
+                            <span class="inline-block bg-orange-100 text-brandOrange font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider editable" id="case-1-location">Кейс: Брюховичі, Львівська обл.</span>
+                            <h3 class="font-space font-bold text-2xl text-brandDark editable" id="case-1-title">Облицювання сходів котеджу морозостійким керамогранітом</h3>
                         </div>
                         
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                            Реалізовано складне архітектурне рішення: сходи з інтегрованими ландшафтними клумбами. Виконано понад 42 погонних метри чистого мокрого різу кутів під 45° на прецизійному верстаті.
+                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed editable" id="case-1-desc">
+                            Реалізовано складне архітектурне рішення: сходи з інтегрованими ландшатними клумбами. Виконано понад $42$ погонних метри чистого мокрого різу кутів під $45^\circ$ на прецизійному верстаті.
                         </p>
 
                         <!-- Таблиця специфікації кейсу -->
                         <div class="border-t border-b border-slate-100 py-4 space-y-3">
                             <div class="flex justify-between text-sm sm:text-base">
                                 <span class="text-slate-500 font-medium">Площа укладання:</span>
-                                <span class="font-bold text-brandDark">18.5 м<sup>2</sup></span>
+                                <span class="font-bold text-brandDark"><span class="editable" id="case-1-area">$18.5\text{ м}^2$</span></span>
                             </div>
                             <div class="flex justify-between text-sm sm:text-base">
                                 <span class="text-slate-500 font-medium">Використаний матеріал:</span>
-                                <span class="font-bold text-brandDark">Керамограніт 60х60 під камінь</span>
+                                <span class="font-bold text-brandDark"><span class="editable" id="case-1-material">Керамограніт $60 \times 60$ під камінь</span></span>
                             </div>
                             <div class="flex justify-between text-sm sm:text-base">
                                 <span class="text-slate-500 font-medium">Термін виконання:</span>
-                                <span class="font-bold text-brandDark">10 робочих днів</span>
+                                <span class="font-bold text-brandDark"><span class="editable" id="case-1-duration">10 робочих днів</span></span>
                             </div>
                             <div class="flex justify-between text-sm sm:text-base">
                                 <span class="text-slate-500 font-medium">Загальний бюджет робіт:</span>
-                                <span class="font-bold text-brandOrange">32 000 грн</span>
+                                <span class="font-bold text-brandOrange"><span class="editable" id="case-1-budget">32 000 грн</span></span>
                             </div>
                         </div>
 
@@ -400,15 +409,15 @@
                             <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
                                 <li class="flex items-center gap-2">
                                     <i class="fa-solid fa-circle-check text-brandOrange"></i>
-                                    <span>Запил під 45° на клумбах без пластикових куточків</span>
+                                    <span class="editable" id="case-1-feat-1">Запил під $45^\circ$ на клумбах без пластикових куточків</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <i class="fa-solid fa-circle-check text-brandOrange"></i>
-                                    <span>Монтаж на високоеластичний клей класу S1 (для вулиці)</span>
+                                    <span class="editable" id="case-1-feat-2">Монтаж на високоеластичний клей класу S1 (для вулиці)</span>
                                 </li>
                                 <li class="flex items-center gap-2">
                                     <i class="fa-solid fa-circle-check text-brandOrange"></i>
-                                    <span>Двошарова гідроізоляція для запобігання відшаровуванню</span>
+                                    <span class="editable" id="case-1-feat-3">Двошарова гідроізоляція для запобігання відшаровуванню</span>
                                 </li>
                             </ul>
                         </div>
@@ -426,40 +435,40 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
                     <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Як ми працюємо</span>
-                    <h2 class="font-space font-bold text-2xl sm:text-4xl">4 чіткі кроки до вашого задоволення результатом</h2>
-                    <p class="text-slate-400 text-sm sm:text-base">Проста, зрозуміла та відкрита схема взаємодії без непередбачуваних сюрпризів.</p>
+                    <h2 class="font-space font-bold text-2xl sm:text-4xl editable" id="steps-title">4 чіткі кроки до вашого задоволення результатом</h2>
+                    <p class="text-slate-400 text-sm sm:text-base editable" id="steps-subtitle">Проста, зрозуміла та відкрита схема взаємодії без непередбачуваних сюрпризів.</p>
                 </div>
 
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     
                     <div class="relative space-y-4 border-l-2 border-brandOrange/30 pl-4 sm:border-l-0 sm:pl-0">
                         <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50" aria-hidden="true">01</div>
-                        <h3 class="text-lg sm:text-xl font-bold">Зручна заявка</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        <h3 class="text-lg sm:text-xl font-bold editable" id="step-title-1">Зручна заявка</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed editable" id="step-desc-1">
                             Дзвоните нам або заповнюєте форму на сайті. Обговорюємо обсяг, вид плитки та бажані терміни виконання робіт.
                         </p>
                     </div>
 
                     <div class="relative space-y-4 border-l-2 border-brandOrange/30 pl-4 sm:border-l-0 sm:pl-0">
                         <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50" aria-hidden="true">02</div>
-                        <h3 class="text-lg sm:text-xl font-bold">Безкоштовний замір</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        <h3 class="text-lg sm:text-xl font-bold editable" id="step-title-2">Безкоштовний замір</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed editable" id="step-desc-2">
                             Виїжджаємо на об'єкт з лазерним нівеліром, оцінюємо стан стін і складаємо детальний прозорий кошторис.
                         </p>
                     </div>
 
                     <div class="relative space-y-4 border-l-2 border-brandOrange/30 pl-4 sm:border-l-0 sm:pl-0">
                         <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50" aria-hidden="true">03</div>
-                        <h3 class="text-lg sm:text-xl font-bold">Процес укладання</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        <h3 class="text-lg sm:text-xl font-bold editable" id="step-title-3">Процес укладання</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed editable" id="step-desc-3">
                             Готуємо основу, наносимо гідроізоляцію та укладаємо плитку відповідно до узгодженої схеми розкладки.
                         </p>
                     </div>
 
                     <div class="relative space-y-4 border-l-2 border-brandOrange/30 pl-4 sm:border-l-0 sm:pl-0">
                         <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50" aria-hidden="true">04</div>
-                        <h3 class="text-lg sm:text-xl font-bold">Прибирання та здача</h3>
-                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        <h3 class="text-lg sm:text-xl font-bold editable" id="step-title-4">Прибирання та здача</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed editable" id="step-desc-4">
                             Змиваємо залишки затирки, пилососимо приміщення, виносимо будівельне сміття та здаємо вам абсолютно чисту ванну.
                         </p>
                     </div>
@@ -473,13 +482,24 @@
             <div class="max-w-4xl mx-auto px-4 sm:px-6">
                 <div class="text-center mb-10 sm:mb-12 space-y-4">
                     <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Ціни на послуги</span>
-                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark">Чесна вартість без прихованих платежів</h2>
-                    <p class="text-slate-500 text-sm sm:text-base">Фіксуємо фінальну вартість за квадратний метр. У вартість вже входить базова розмітка та підрізка.</p>
+                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark editable" id="prices-title">Чесна вартість без прихованих платежів</h2>
+                    <p class="text-slate-500 text-sm sm:text-base editable" id="prices-subtitle">Фіксуємо фінальну вартість за квадратний метр. У вартість вже входить базова розмітка та підрізка.</p>
                 </div>
 
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-xl w-full">
+                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-xl w-full relative">
+                    
+                    <!-- Кнопки керування прайсом (Доступні лише в режимі edit=true) -->
+                    <div id="price-controls-ui" class="hidden p-4 bg-slate-50 border-b flex gap-3">
+                        <button onclick="addPriceRow()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-4 py-2 rounded-lg text-xs flex items-center gap-1.5 transition-colors">
+                            <i class="fa-solid fa-plus"></i> Додати рядок
+                        </button>
+                        <button onclick="removeLastPriceRow()" class="bg-rose-600 hover:bg-rose-700 text-white font-bold px-4 py-2 rounded-lg text-xs flex items-center gap-1.5 transition-colors">
+                            <i class="fa-solid fa-trash-can"></i> Видалити рядок
+                        </button>
+                    </div>
+
                     <div class="overflow-x-auto w-full">
-                        <table class="w-full text-left border-collapse min-w-[600px]" aria-label="Таблиця вартості послуг з укладання плитки">
+                        <table class="w-full text-left border-collapse min-w-[600px]" id="prices-table" aria-label="Таблиця вартості послуг з укладання плитки">
                             <thead>
                                 <tr class="bg-brandDark text-white">
                                     <th class="py-4 sm:py-5 px-5 sm:px-6 font-space font-bold text-xs sm:text-sm tracking-wide uppercase">Найменування робіт</th>
@@ -487,51 +507,51 @@
                                     <th class="py-4 sm:py-5 px-5 sm:px-6 font-space font-bold text-xs sm:text-sm tracking-wide uppercase text-right w-32">Ціна</th>
                                 </tr>
                             </thead>
-                            <tbody class="divide-y divide-slate-100 bg-white text-slate-700 text-sm sm:text-base">
+                            <tbody class="divide-y divide-slate-100 bg-white text-slate-700 text-sm sm:text-base" id="prices-table-body">
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Укладання плитки</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">м<sup>2</sup></td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">від 1000грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Укладання плитки</td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 1000грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Вирізання отворів</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">шт.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">від 250 грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Вирізання отворів</td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">шт.</td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 250 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Фугування двох компоненною фугою</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">м<sup>2</sup></td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">від 350 грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Фугування двох компоненною фугою</td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 350 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Запил зовнішнього кута під 45 градусів (чистий мокрий різ)</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">м.п.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">350 грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Запил зовнішнього кута під $45^\circ$ (чистий мокрий різ)</td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м.п.</td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">350 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Комплексна двошарова гідроізоляція під  плитку </td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">м<sup>2</sup></td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">250 грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Комплексна двошарова гідроізоляція під  плитку </td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">250 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Гідроізол.стрічка </td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">м.п.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">150 грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Гідроізол.стрічка </td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м.п.</td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">150 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Штукатурка і стяжка</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">м<sup>2</sup></td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">від 500 грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Штукатурка і стяжка</td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 500 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Силіконення швів</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">м.п.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">від 150 грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Силіконення швів</td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м.п.</td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 150 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark">Підрізання плитки під заводський шов</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500">м.п.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange">від 250 грн</td>
+                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Підрізання плитки під заводський шов</td>
+                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м.п.</td>
+                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 250 грн</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -552,8 +572,8 @@
                     <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(234,88,12,0.12),transparent_50%)]" aria-hidden="true"></div>
                     <div class="space-y-4 sm:space-y-6 relative z-10">
                         <span class="text-brandOrange font-bold text-xs tracking-wider uppercase">Швидкий прорахунок</span>
-                        <h3 class="font-space font-bold text-2xl leading-tight">Розрахуйте бюджет за 2 хвилини</h3>
-                        <p class="text-slate-300 text-sm leading-relaxed">
+                        <h3 class="font-space font-bold text-2xl leading-tight editable" id="form-title">Розрахуйте бюджет за 2 хвилини</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed editable" id="form-desc">
                             Просто вкажіть ваші контакти та орієнтовну площу приміщення. Наш майстер оперативно проаналізує дані та надішле приблизний розрахунок вартості робіт і матеріалів прямо на ваш телефон.
                         </p>
                     </div>
@@ -625,14 +645,14 @@
 
     </main>
 
-    <!-- ФУТЕР (FOOTER - ОНОВЛЕНИЙ НА ОСНОВІ image_05f811.png) -->
+    <!-- ФУТЕР (FOOTER) -->
     <footer class="bg-brandDark text-slate-300 py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-800" role="contentinfo">
         <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 pb-12">
             
             <!-- Стовпчик 1: РІВЕНЬ. -->
             <div class="space-y-4">
                 <span class="font-sans font-bold text-2xl text-white tracking-tight block">РІВЕНЬ.</span>
-                <p class="text-sm leading-relaxed text-slate-400">
+                <p class="text-sm leading-relaxed text-slate-400 editable" id="footer-about-text">
                     Плиточні роботи будь-якої складності у Львові та області. Договір, кошторис і чистота на об'єкті — за замовчуванням.
                 </p>
             </div>
@@ -642,10 +662,10 @@
                 <span class="font-sans font-bold text-sm text-white tracking-wider uppercase block">Контакти</span>
                 <ul class="space-y-3 text-sm text-slate-400">
                     <li>
-                        <a href="tel:+0679932110" class="hover:text-brandOrange transition-colors block font-semibold text-white text-base">(067) 993-21-10</a>
+                        <a href="tel:+380679932110" class="hover:text-brandOrange transition-colors block font-semibold text-white text-base"><span class="editable" id="footer-phone-text">(067) 993-21-10</span></a>
                     </li>
                     <li>
-                        <a href="https://t.me/riven_lviv_tile" target="_blank" class="hover:text-brandOrange transition-colors block">Telegram: @riven_lviv_tile</a>
+                        <a href="https://t.me/riven_lviv_tile" target="_blank" class="hover:text-brandOrange transition-colors block">Telegram: <span class="editable" id="footer-tg-username">@riven_lviv_tile</span></a>
                     </li>
                     <li>Львів і область</li>
                 </ul>
@@ -655,9 +675,9 @@
             <div class="space-y-4">
                 <span class="font-sans font-bold text-sm text-white tracking-wider uppercase block">Графік</span>
                 <ul class="space-y-2 text-sm text-slate-400">
-                    <li>Пн–Сб: 08:00–20:00</li>
-                    <li>Нд: за домовленістю</li>
-                    <li class="text-brandOrange font-semibold pt-1">Виїзд на замір — безкоштовно</li>
+                    <li class="editable" id="footer-schedule-days">Пн–Сб: 08:00–20:00</li>
+                    <li class="editable" id="footer-schedule-sunday">Нд: за домовленістю</li>
+                    <li class="text-brandOrange font-semibold pt-1 editable" id="footer-survey-info">Виїзд на замір — безкоштовно</li>
                 </ul>
             </div>
             
@@ -665,15 +685,52 @@
 
         <!-- Нижня плашка з розділювачем -->
         <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-            <p>© 2026 РІВЕНЬ. Плиточні роботи у Львові.</p>
-            <!-- <p>Сайт-приклад для локального бізнесу</p> -->
+            <p class="editable" id="footer-copyright">© 2026 РІВЕНЬ. Плиточні роботи у Львові.</p>
         </div>
     </footer>
+
+    <!-- АДМІН-ПАНЕЛЬ ВІЗУАЛЬНОГО РЕДАКТОРА (З'ЯВЛЯЄТЬСЯ ТІЛЬКИ ПРИ ?edit=true) -->
+    <div id="admin-editor-panel" class="hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900 text-white border-t-4 border-brandOrange p-5 shadow-2xl">
+        <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
+            
+            <!-- Заголовок панелі -->
+            <div>
+                <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></span>
+                    <h4 class="font-bold text-sm tracking-wide uppercase">Режим візуального редактора «РІВЕНЬ»</h4>
+                </div>
+                <p class="text-xs text-slate-400 mt-1">Клацайте на будь-який текст або ціну прямо на сайті та пишіть зміни.</p>
+            </div>
+
+            <!-- Форма налаштування доступу до вашого GitHub репозиторію -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 w-full lg:max-w-2xl text-xs">
+                <div>
+                    <label class="block text-slate-400 font-semibold mb-1">GitHub Username:</label>
+                    <input type="text" id="admin-user" placeholder="Твій нік на GitHub" class="w-full bg-slate-800 border border-slate-700 rounded p-2 text-white outline-none focus:border-brandOrange">
+                </div>
+                <div>
+                    <label class="block text-slate-400 font-semibold mb-1">Repository Name:</label>
+                    <input type="text" id="admin-repo" placeholder="Наприклад: riven-lviv" class="w-full bg-slate-800 border border-slate-700 rounded p-2 text-white outline-none focus:border-brandOrange">
+                </div>
+                <div>
+                    <label class="block text-slate-400 font-semibold mb-1">GitHub Token (PAT):</label>
+                    <input type="password" id="admin-pat" placeholder="github_pat_..." class="w-full bg-slate-800 border border-slate-700 rounded p-2 text-white outline-none focus:border-brandOrange">
+                </div>
+            </div>
+
+            <!-- Кнопка Зберегти -->
+            <button onclick="saveToGithub()" id="admin-save-btn" class="w-full lg:w-auto bg-brandOrange hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg text-xs flex items-center justify-center gap-2 transition-colors">
+                <i class="fa-solid fa-cloud-arrow-up text-sm"></i>
+                <span>Зберегти зміни на сайті</span>
+            </button>
+
+        </div>
+    </div>
 
     <!-- СКРИПТ: Телеграм-бот та Інтерактивний Слайдер -->
     <script>
         /* =======================================================
-           1. ІНТЕРАКТИВНА ГАЛЕРЕЯ КЕЙСІВ (НОВА ВЕРСІЯ)
+           1. ІНТЕРАКТИВНА ГАЛЕРЕЯ КЕЙСІВ
            ======================================================= */
         document.querySelectorAll('.project-gallery').forEach(gallery => {
             const mainImg = gallery.querySelector('.main-gallery-image');
@@ -809,6 +866,142 @@
             setTimeout(() => {
                 toast.classList.add('hidden');
             }, 6000);
+        }
+
+        /* =======================================================
+           4. ЛОГІКА ВІЗУАЛЬНОГО РЕДАКТОРА (?edit=true)
+           ======================================================= */
+        window.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const isEditMode = urlParams.get('edit') === 'true';
+
+            if (isEditMode) {
+                // Попередньо підставляємо раніше збережені дані з localStorage у форму адмінки
+                document.getElementById('admin-user').value = localStorage.getItem('git_user') || '';
+                document.getElementById('admin-repo').value = localStorage.getItem('git_repo') || '';
+                document.getElementById('admin-pat').value = localStorage.getItem('git_pat') || '';
+
+                // Показуємо панель адмінки та панель керування прайсом
+                document.getElementById('admin-editor-panel').classList.remove('hidden');
+                document.getElementById('price-controls-ui').classList.remove('hidden');
+
+                // Робимо всі блоки з класом "editable" придатними для писання прямо на сторінці
+                const editableElements = document.querySelectorAll('.editable');
+                editableElements.forEach(el => {
+                    el.setAttribute('contenteditable', 'true');
+                    el.classList.add('editable-active');
+                });
+            }
+        });
+
+        // Керування рядками в таблиці цін
+        function addPriceRow() {
+            const tbody = document.getElementById('prices-table-body');
+            const newRow = document.createElement('tr');
+            newRow.className = "hover:bg-slate-50 transition-colors";
+            newRow.innerHTML = `
+                <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable editable-active" contenteditable="true">Нова послуга (впишіть назву)</td>
+                <td class="py-4 px-5 sm:px-6 text-slate-500 editable editable-active" contenteditable="true">м<sup>2</sup></td>
+                <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable editable-active" contenteditable="true">від 100 грн</td>
+            `;
+            tbody.appendChild(newRow);
+        }
+
+        function removeLastPriceRow() {
+            const tbody = document.getElementById('prices-table-body');
+            if (tbody.children.length > 1) {
+                tbody.removeChild(tbody.lastElementChild);
+            }
+        }
+
+        // Ключова функція: Збереження зміненого контенту через GitHub API
+        async function saveToGithub() {
+            const saveBtn = document.getElementById('admin-save-btn');
+            const token = document.getElementById('admin-pat').value.trim();
+            const username = document.getElementById('admin-user').value.trim();
+            const repo = document.getElementById('admin-repo').value.trim();
+            const filepath = 'index.html'; // Зберігаємо у цей же файл
+
+            if (!token || !username || !repo) {
+                alert("Помилка! Заповніть усі три поля авторизації (Username, Repo, Token) у нижній панелі!");
+                return;
+            }
+
+            // Зберігаємо локально у браузері користувача для зручності при наступному вході
+            localStorage.setItem('git_pat', token);
+            localStorage.setItem('git_user', username);
+            localStorage.setItem('git_repo', repo);
+
+            saveBtn.disabled = true;
+            saveBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Спроба збереження...`;
+
+            // Створюємо чисту копію документу для чистки від адмінських стилів перед збереженням
+            const cleanDoc = document.cloneNode(true);
+            
+            // 1. Повністю видаляємо HTML самій панелі редактора, щоб публічні користувачі її не бачили
+            const editorUi = cleanDoc.getElementById('admin-editor-panel');
+            if (editorUi) editorUi.remove();
+
+            // 2. Видаляємо блок керування таблицею прайсу
+            const priceControls = cleanDoc.getElementById('price-controls-ui');
+            if (priceControls) priceControls.remove();
+
+            // 3. Знімаємо атрибути редагування та класи з підсвіткою
+            cleanDoc.querySelectorAll('.editable').forEach(el => {
+                el.removeAttribute('contenteditable');
+                el.classList.remove('editable-active');
+            });
+
+            // 4. Отримуємо фінальний чистий рядок коду
+            const cleanHtml = "<!DOCTYPE html>\n" + cleanDoc.documentElement.outerHTML;
+
+            try {
+                // Крок 1. Отримуємо SHA останнього коміту файлу на GitHub (це вимога захисту GitHub API)
+                const getUrl = `https://api.github.com/repos/${username}/${repo}/contents/${filepath}`;
+                const getResponse = await fetch(getUrl, {
+                    headers: { 'Authorization': `token ${token}` }
+                });
+
+                let sha = null;
+                if (getResponse.ok) {
+                    const fileData = await getResponse.json();
+                    sha = fileData.sha;
+                } else if (getResponse.status !== 404) {
+                    throw new Error("Не вдалося отримати репозиторій. Перевірте правильність введених даних.");
+                }
+
+                // Крок 2. Робимо PUT запит для запису оновленого файлу
+                const putBody = {
+                    message: "feat: update content via Riven Visual Editor 🛠️",
+                    content: btoa(unescape(encodeURIComponent(cleanHtml))), // Надійне кодування UTF-8 у base64
+                    branch: "main"
+                };
+                if (sha) {
+                    putBody.sha = sha;
+                }
+
+                const putResponse = await fetch(getUrl, {
+                    method: 'PUT',
+                    headers: {
+                        'Authorization': `token ${token}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(putBody)
+                });
+
+                if (putResponse.ok) {
+                    alert("Успіх! Зміни успішно надіслані у ваш GitHub репозиторій. Netlify самостійно оновить сайт в інтернеті за 10-15 секунд!");
+                } else {
+                    const errData = await putResponse.json();
+                    throw new Error(errData.message || "Помилка сервера GitHub.");
+                }
+
+            } catch (err) {
+                alert("Сталася помилка при збереженні: " + err.message);
+            } finally {
+                saveBtn.disabled = false;
+                saveBtn.innerHTML = `<i class="fa-solid fa-cloud-arrow-up text-sm"></i> <span>Зберегти зміни на сайті</span>`;
+            }
         }
     </script>
 </body>
