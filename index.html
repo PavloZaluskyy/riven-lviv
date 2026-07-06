@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<html lang="uk" class="scroll-smooth">
+<html lang="uk" class="scroll-smooth overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="robots" content="index, follow">
     
-    <!-- ТИТУЛ СТОРІНКИ (SEO-оптимізований) -->
-    <title id="seo-title">РІВЕНЬ | Професійне укладання плитки та керамограніту у Львові</title>
+    <!-- ТИТУЛ СТОРІНКИ (SEO-оптимізований: Ключове слово + Гео + Бренд/Перевага) -->
+    <title>РІВЕНЬ | Професійне укладання плитки та керамограніту у Львові</title>
     
     <!-- МЕТА-ТЕГИ ДЛЯ ПОШУКОВИХ СИСТЕМ -->
-    <meta name="description" id="seo-description" content="Шукаєте професійного плиточника у Львові? Пропонуємо якісне укладання великоформатного керамограніту, мозаїки та складних вхідних груп за договором. Чиста робота без пилу, запил під $45^\circ$. Дивіться реальні роботи!">
+    <meta name="description" content="Шукаєте професійного плиточника у Львові? Пропонуємо якісне укладання великоформатного керамограніту, мозаїки та складних вхідних груп за договором. Чиста робота без пилу, запил під 45°. Дивіться реальні роботи!">
     <meta name="keywords" content="плиточник львів, укладання плитки львів, ремонт сходів львів, плиточник львів ціни, укладання керамограніту львів, майстер по плитці львів, запил під 45 львів, вхідна група плитка">
     <link rel="canonical" href="https://lviv-tile-works.dp.ua/">
 
-    <!-- OPEN GRAPH -->
+    <!-- OPEN GRAPH (Для красивого відображення в соцмережах та месенджерах) -->
     <meta property="og:locale" content="uk_UA">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Професійне укладання плитки та керамограніту у Львові">
-    <meta property="og:description" content="Якісне укладання плитки за договором та з гарантією. Запил під $45^\circ$, укладання вхідних груп та терас. Дивіться наше портфоліо.">
+    <meta property="og:title" content="Професійне укладання плитки у Львові | РІВЕНЬ">
+    <meta property="og:description" content="Якісне укладання плитки за договором та з гарантією. Запил під 45°, робота з промисловим пилососом. Дивіться ціни та портфоліо на сайті.">
     <meta property="og:url" content="https://lviv-tile-works.dp.ua/">
-    <meta property="og:image" content="./img/banner.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:site_name" content="РІВЕНЬ Плиточні Роботи">
-
-    <!-- TWITTER CARDS -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Плиточник Львів | Професійне укладання плитки">
-    <meta name="twitter:description" content="Укладання керамограніту, вхідних груп у Львові. Чиста робота з пилососом, фіксований кошторис.">
-    <meta name="twitter:image" content="./img/banner.jpg">
+    <meta property="og:image" content="f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg">
+    <meta property="og:site_name" content="РІВЕНЬ">
 
     <!-- СТРУКТУРОВАНІ ДАНІ SCHEMA.ORG (JSON-LD) -->
     <script type="application/ld+json">
@@ -36,7 +28,7 @@
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
       "name": "РІВЕНЬ Плиточні Роботи",
-      "image": "./img/banner.jpg",
+      "image": "f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg",
       "@id": "https://lviv-tile-works.dp.ua/#business",
       "url": "https://lviv-tile-works.dp.ua/",
       "telephone": "+380679932110",
@@ -66,9 +58,6 @@
         "opens": "08:00",
         "closes": "20:00"
       },
-      "sameAs": [
-        "https://t.me/riven_lviv_tile"
-      ],
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Львівська область"
@@ -82,7 +71,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     
     <!-- Іконки FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!-- Tailwind CSS через CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -107,11 +96,11 @@
     <!-- Мікро-стилі для кращого UX/UI -->
     <style>
         .tiling-grid {
-            background-image: linear-gradient(rgba(30, 41, 59, 0.015) 1px, transparent 1px),
-                              linear-gradient(90deg, rgba(30, 41, 59, 0.015) 1px, transparent 1px);
+            background-image: linear-gradient(rgba(30, 41, 59, 0.012) 1px, transparent 1px),
+                              linear-gradient(90deg, rgba(30, 41, 59, 0.012) 1px, transparent 1px);
             background-size: 40px 40px;
         }
-        /* Візуальне підсвічування елементів під час редагування */
+        /* Візуальне виділення елементів, які можна редагувати в адмінці */
         .editable-active {
             outline: 2px dashed #EA580C !important;
             outline-offset: 4px;
@@ -122,16 +111,14 @@
             background-color: rgba(234, 88, 12, 0.05);
         }
         @media (prefers-reduced-motion: reduce) {
-            html {
-                scroll-behavior: auto;
-            }
+            html { scroll-behavior: auto; }
         }
     </style>
 </head>
-<body class="bg-brandBg font-sans text-slate-700 tiling-grid min-h-screen antialiased">
+<body class="bg-brandBg font-sans text-slate-700 tiling-grid min-h-screen antialiased  overflow-x-hidden">
 
     <!-- НАВІГАЦІЙНА ПАНЕЛЬ (HEADER) -->
-    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm" role="banner">
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm w-full" role="banner">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
                 
@@ -142,7 +129,7 @@
                     </div>
                     <div>
                         <span class="font-space font-bold text-xl text-brandDark tracking-tight">РІВЕНЬ</span>
-                        <span class="block text-[10px] text-brandOrange font-bold tracking-widest uppercase -mt-1 editable" id="logo-subtext">Плиточні роботи</span>
+                        <span class="block text-[10px] text-brandOrange font-bold tracking-widest uppercase -mt-1">Плиточні роботи</span>
                     </div>
                 </a>
 
@@ -161,7 +148,7 @@
                         <i class="fa-solid fa-phone text-brandOrange" aria-hidden="true"></i>
                         <span class="editable" id="phone-text-header">(067) 993-21-10</span>
                     </a>
-                    <a href="#calculator" class="hidden sm:inline-flex bg-brandOrange hover:bg-orange-700 text-white font-bold px-5 py-2.5 rounded-lg text-sm shadow-md shadow-brandOrange/10 transition-all duration-200" aria-label="Отримати швидкий розрахунок вартості">
+                    <a href="#calculator" class="hidden sm:inline-flex bg-brandOrange hover:bg-orange-700 text-white font-bold px-5 py-2.5 rounded-lg text-sm shadow-md shadow-brandOrange/10 transition-all duration-200">
                         Швидкий прорахунок
                     </a>
                     
@@ -193,11 +180,11 @@
                 </a>
             </nav>
             <div class="pt-4 flex flex-col gap-3">
-                <a href="tel:+380679932110" class="flex items-center justify-center gap-2 font-bold text-brandDark py-3 bg-slate-100 rounded-xl hover:text-brandOrange transition-colors" aria-label="Подзвонити нам">
+                <a href="tel:+380679932110" class="flex items-center justify-center gap-2 font-bold text-brandDark py-3 bg-slate-100 rounded-xl hover:text-brandOrange transition-colors">
                     <i class="fa-solid fa-phone text-brandOrange"></i>
                     <span class="editable" id="phone-text-mobile">(067) 993-21-10</span>
                 </a>
-                <a href="#calculator" class="mobile-menu-link block text-center bg-brandOrange hover:bg-orange-700 text-white font-bold py-3.5 rounded-xl text-sm shadow-md transition-colors">
+                <a href="#calculator" class="mobile-menu-link block text-center bg-brandOrange hover:bg-orange-700 text-white font-bold py-3.5 rounded-xl text-sm shadow-md">
                     Швидкий прорахунок
                 </a>
             </div>
@@ -205,10 +192,10 @@
     </header>
 
     <!-- ГОЛОВНИЙ КОНТЕНТ -->
-    <main role="main">
+    <main role="main" class="w-full overflow-x-hidden">
 
         <!-- 1. ГОЛОВНИЙ ЕКРАН (HERO SECTION) -->
-        <section id="hero" class="py-10 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+        <section id="hero" class="py-10 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 w-full">
             <div class="max-w-7xl mx-auto lg:grid lg:grid-cols-12 lg:gap-12 items-center">
                 
                 <div class="lg:col-span-6 space-y-6">
@@ -222,12 +209,12 @@
                         Професійне укладання плитки у <span class="text-brandOrange">Львові</span> без пилу та бруду
                     </h1>
                     
-                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed editable" id="hero-description">
+                    <p class="text-base sm:text-lg text-slate-600 leading-relaxed editable" id="hero-description-text">
                         Шукаєте ідеально рівні шви та бездоганний запил кутів під $45^\circ$? Працюємо за договором з будь-якими форматами: від витонченої мозаїки до керамограніту великого розміру $120 \times 60$. Повністю прибираємо та виносимо все будівельне сміття після завершення проекту.
                     </p>
                     
                     <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                        <a href="tel:+380679932110" class="inline-flex justify-center items-center bg-brandOrange hover:bg-orange-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brandOrange/20 transition-all duration-200 transform hover:-translate-y-0.5" aria-label="Зателефонувати майстру напряму">
+                        <a href="tel:+380679932110" id="hero-call-btn" class="inline-flex justify-center items-center bg-brandOrange hover:bg-orange-700 text-white font-bold px-8 py-4 rounded-xl shadow-lg shadow-brandOrange/20 transition-all duration-200 transform hover:-translate-y-0.5">
                             <i class="fa-solid fa-phone-volume mr-2" aria-hidden="true"></i> Подзвонити майстру
                         </a>
                         <a href="#prices" class="inline-flex justify-center items-center bg-white border border-slate-200 hover:border-slate-300 text-brandDark font-semibold px-8 py-4 rounded-xl transition-all duration-200">
@@ -236,20 +223,23 @@
                     </div>
                 </div>
 
+                <!-- Зображення головного банера -->
                 <div class="lg:col-span-6 mt-10 lg:mt-0">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] md:aspect-[16/10] lg:aspect-auto lg:h-[480px]">
-                        <!-- Головна фотографія вхідної групи -->
                         <img 
                             src="./img/banner.jpg" 
-                            alt="Готова вхідна група котеджу з якісним укладанням плитки" 
+                            alt="Професійне укладання великоформатної плитки у Львові" 
                             loading="eager"
                             decoding="async"
                             class="w-full h-full object-cover"
+                            id="hero-banner-image"
                         >
-                        <!-- ПЛАШКА: Сценарій 1 (Точний фреймінг портфоліо робіт) -->
-                        <div class="absolute bottom-4 left-4 right-4 sm:right-auto sm:bottom-6 sm:left-6 bg-brandDark/95 backdrop-blur-md text-white p-4 rounded-xl border border-slate-700 shadow-xl max-w-sm sm:max-w-xs">
-                            <span class="text-xs text-brandOrange font-bold tracking-wider uppercase">РЕАЛЬНИЙ ОБ'ЄКТ У ЛЬВОВІ</span>
-                            <p class="text-xs sm:text-sm font-medium mt-1 editable" id="hero-banner-caption">Облицювання вхідних сходів котеджу керамогранітом із чистим запилом кутів під $45^\circ$</p>
+                        <!-- Плашка-опис під фото -->
+                        <div class="absolute bottom-4 left-4 right-4 sm:right-auto sm:bottom-6 sm:left-6 bg-brandDark/95 backdrop-blur-md text-white p-4 rounded-xl border border-slate-700 shadow-xl max-w-sm">
+                            <span class="text-xs text-brandOrange font-bold tracking-wider uppercase">Реальний проект</span>
+                            <p class="text-xs sm:text-sm font-medium mt-1 editable" id="hero-banner-caption">
+                                Облицювання вхідних сходів котеджу керамогранітом із чистим запилом кутів під $45^\circ$. (Львів, Брюховичі)
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -258,7 +248,7 @@
         </section>
 
         <!-- 2. БЛОК ЧОМУ ОБИРАЮТЬ НАС (WHY US) -->
-        <section id="why-us" class="py-16 md:py-24 bg-white border-y border-slate-100">
+        <section id="why-us" class="py-16 md:py-24 bg-white border-y border-slate-100 w-full">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
                     <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Переваги сервісу</span>
@@ -268,8 +258,9 @@
 
                 <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
                     
+                    <!-- Картка 1 -->
                     <article class="bg-brandBg p-6 sm:p-8 rounded-2xl border border-slate-100 hover:border-brandOrange/30 transition-all duration-300">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm" aria-hidden="true">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm">
                             <i class="fa-solid fa-gem text-xl sm:text-2xl"></i>
                         </div>
                         <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3 editable" id="feature-title-1">Кути під $45^\circ$ без сколів</h3>
@@ -278,8 +269,9 @@
                         </p>
                     </article>
 
+                    <!-- Картка 2 -->
                     <article class="bg-brandBg p-6 sm:p-8 rounded-2xl border border-slate-100 hover:border-brandOrange/30 transition-all duration-300">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm" aria-hidden="true">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm">
                             <i class="fa-solid fa-broom text-xl sm:text-2xl"></i>
                         </div>
                         <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3 editable" id="feature-title-2">Без бруду та пилу</h3>
@@ -288,8 +280,9 @@
                         </p>
                     </article>
 
+                    <!-- Картка 3 -->
                     <article class="bg-brandBg p-6 sm:p-8 rounded-2xl border border-slate-100 hover:border-brandOrange/30 transition-all duration-300">
-                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm" aria-hidden="true">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 bg-orange-100 text-brandOrange rounded-xl flex items-center justify-center mb-6 shadow-sm">
                             <i class="fa-solid fa-file-invoice-dollar text-xl sm:text-2xl"></i>
                         </div>
                         <h3 class="font-space font-bold text-lg sm:text-xl text-brandDark mb-3 editable" id="feature-title-3">Фіксований кошторис</h3>
@@ -302,171 +295,126 @@
             </div>
         </section>
 
-        <!-- 3. ОНОВЛЕНИЙ ІНТЕРАКТИВНИЙ БЛОК ПОРТФОЛІО (PORTFOLIO / CASE STUDY) -->
-        <section id="portfolio" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <!-- 3. БЛОК ПОРТФОЛІО ТА КЕЙСИ (PORTFOLIO) -->
+        <section id="portfolio" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 w-full">
             <div class="max-w-7xl mx-auto">
-                
                 <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
-                    <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Реалізовані об'єкти</span>
-                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark editable" id="portfolio-title">Наші роботи крупним планом</h2>
-                    <p class="text-slate-500 text-sm sm:text-base editable" id="portfolio-subtitle">Ми групуємо портфоліо за реальними об'єктами. Ви можете переглянути всі етапи та ракурси кожного замовлення.</p>
+                    <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Реальні роботи у Львові</span>
+                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark editable" id="portfolio-title">Перегляньте наші роботи крупним планом</h2>
+                    <p class="text-slate-500 text-sm sm:text-base editable" id="portfolio-subtitle">Ми пишаємося деталями: ідеальною симетрією швів, стиками без порогів та геометрією ліній.</p>
                 </div>
 
-                <!-- КЕЙС №1 (ПОВНІСТЮ ІНТЕРАКТИВНИЙ ТА СКАЛЬОВАНИЙ БЛОК) -->
-                <div class="bg-white p-4 sm:p-8 rounded-3xl border border-slate-100 shadow-xl grid lg:grid-cols-12 gap-8 items-start project-case">
-                    
-                    <!-- Ліва колонка: Інтерактивна галерея -->
-                    <div class="lg:col-span-7 space-y-4 project-gallery">
+                <!-- Кейс проекту -->
+                <div class="project-case bg-white rounded-3xl p-4 sm:p-8 border border-slate-100 shadow-xl mb-12 w-full">
+                    <div class="grid lg:grid-cols-12 gap-8 items-center">
                         
-                        <!-- Великий переглядач зображення -->
-                        <div class="relative w-full aspect-[4/3] sm:aspect-[16/10] bg-slate-100 rounded-2xl overflow-hidden shadow-inner border border-slate-100">
-                            <img 
-                                id="main-view-1" 
-                                src="./img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" 
-                                alt="Готовий проект облицювання сходів котеджу керамогранітом" 
-                                class="w-full h-full object-cover transition-all duration-300 main-gallery-image"
-                                loading="lazy"
-                            >
-                            <span class="absolute top-4 left-4 bg-brandDark/85 backdrop-blur-sm text-white text-xs px-3 py-1.5 rounded-lg font-bold flex items-center gap-1.5">
-                                <i class="fa-solid fa-expand text-[10px] text-brandOrange"></i> Натисніть на мініатюру нижче
-                            </span>
-                        </div>
-
-                        <!-- Ряд адаптивних мініатюр (Усі 5 фотографій клієнта) -->
-                        <div class="grid grid-cols-5 gap-2 sm:gap-3">
-                            <button 
-                                class="aspect-square rounded-xl overflow-hidden border-2 border-brandOrange ring-2 ring-brandOrange transition-all duration-200 focus:outline-none thumb-button" 
-                                data-src="./img/813764ea-d48f-487a-bbf4-239c0479158f.jpg"
-                                aria-label="Переглянути фото 1"
-                            >
-                                <img src="./img/813764ea-d48f-487a-bbf4-239c0479158f.jpg" alt="Сходи котеджу загальний план" class="w-full h-full object-cover pointer-events-none">
-                            </button>
-                            <button 
-                                class="aspect-square rounded-xl overflow-hidden border-2 border-transparent hover:border-slate-300 transition-all duration-200 focus:outline-none thumb-button" 
-                                data-src="./img/8d7f9c87-682a-4b25-ba7f-5266a9f03f61.jpg"
-                                aria-label="Переглянути фото 2"
-                            >
-                                <img src="./img/8d7f9c87-682a-4b25-ba7f-5266a9f03f61.jpg" alt="Сходи з зеленими насадженнями" class="w-full h-full object-cover pointer-events-none">
-                            </button>
-                            <button 
-                                class="aspect-square rounded-xl overflow-hidden border-2 border-transparent hover:border-slate-300 transition-all duration-200 focus:outline-none thumb-button" 
-                                data-src="./img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg"
-                                aria-label="Переглянути фото 3"
-                            >
-                                <img src="./img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" alt="Процес укладання плитки на клумбах" class="w-full h-full object-cover pointer-events-none">
-                            </button>
-                            <button 
-                                class="aspect-square rounded-xl overflow-hidden border-2 border-transparent hover:border-slate-300 transition-all duration-200 focus:outline-none thumb-button" 
-                                data-src="./img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg"
-                                aria-label="Переглянути фото 4"
-                            >
-                                <img src="./img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg" alt="Зарізка кутів під 45 на клумбі крупним планом" class="w-full h-full object-cover pointer-events-none">
-                            </button>
-                            <button 
-                                class="aspect-square rounded-xl overflow-hidden border-2 border-transparent hover:border-slate-300 transition-all duration-200 focus:outline-none thumb-button" 
-                                data-src="./img/667eff75-0b04-4489-bcb3-e52e61570a8e.jpg"
-                                aria-label="Переглянути фото 5"
-                            >
-                                <img src="./img/667eff75-0b04-4489-bcb3-e52e61570a8e.jpg" alt="Ідеально рівний шов на сходинках" class="w-full h-full object-cover pointer-events-none">
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Права колонка: Деталі об'єкта та специфікація -->
-                    <article class="lg:col-span-5 space-y-6 lg:pl-4">
-                        <div class="space-y-2">
-                            <span class="inline-block bg-orange-100 text-brandOrange font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider editable" id="case-1-location">Кейс: Брюховичі, Львівська обл.</span>
-                            <h3 class="font-space font-bold text-2xl text-brandDark editable" id="case-1-title">Облицювання сходів котеджу морозостійким керамогранітом</h3>
-                        </div>
-                        
-                        <p class="text-slate-600 text-sm sm:text-base leading-relaxed editable" id="case-1-desc">
-                            Реалізовано складне архітектурне рішення: сходи з інтегрованими ландшатними клумбами. Виконано понад $42$ погонних метри чистого мокрого різу кутів під $45^\circ$ на прецизійному верстаті.
-                        </p>
-
-                        <!-- Таблиця специфікації кейсу -->
-                        <div class="border-t border-b border-slate-100 py-4 space-y-3">
-                            <div class="flex justify-between text-sm sm:text-base">
-                                <span class="text-slate-500 font-medium">Площа укладання:</span>
-                                <span class="font-bold text-brandDark"><span class="editable" id="case-1-area">$18.5\text{ м}^2$</span></span>
+                        <!-- Інтерактивна галерея з мініатюрами -->
+                        <div class="lg:col-span-7 space-y-4 project-gallery max-w-full overflow-hidden" id="case-1-gallery">
+                            <div class="relative w-full h-[240px] sm:h-[450px] overflow-hidden rounded-2xl shadow-md border">
+                                <img 
+                                    src="./img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" 
+                                    alt="Головне фото об'єкту" 
+                                    class="w-full h-full object-cover transition-all duration-300 main-gallery-image"
+                                >
                             </div>
-                            <div class="flex justify-between text-sm sm:text-base">
-                                <span class="text-slate-500 font-medium">Використаний матеріал:</span>
-                                <span class="font-bold text-brandDark"><span class="editable" id="case-1-material">Керамограніт $60 \times 60$ під камінь</span></span>
-                            </div>
-                            <div class="flex justify-between text-sm sm:text-base">
-                                <span class="text-slate-500 font-medium">Термін виконання:</span>
-                                <span class="font-bold text-brandDark"><span class="editable" id="case-1-duration">10 робочих днів</span></span>
-                            </div>
-                            <div class="flex justify-between text-sm sm:text-base">
-                                <span class="text-slate-500 font-medium">Загальний бюджет робіт:</span>
-                                <span class="font-bold text-brandOrange"><span class="editable" id="case-1-budget">32 000 грн</span></span>
+                            
+                            <!-- Рядок мініатюр (ОБМЕЖЕНИЙ МАКСИМАЛЬНОЮ ШИРИНОЮ) -->
+                            <div class="flex gap-2.5 overflow-x-auto pb-2 scrollbar-thin w-full max-w-full">
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-brandOrange flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/8d7f9c87-682a-4b25-ba7f-5266a9f03f61.jpg')">
+                                    <img src="./img/8d7f9c87-682a-4b25-ba7f-5266a9f03f61.jpg" class="w-full h-full object-cover" alt="[Мініатюра готової вхідної групи]">
+                                </button>
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/667eff75-0b04-4489-bcb3-e52e61570a8e.jpg')">
+                                    <img src="./img/667eff75-0b04-4489-bcb3-e52e61570a8e.jpg" class="w-full h-full object-cover" alt="[Мініатюра процесу запилу під 45]">
+                                </button>
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg')">
+                                    <img src="./img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg" class="w-full h-full object-cover" alt="[Мініатюра запилу кутів клумби]">
+                                </button>
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/813764ea-d48f-487a-bbf4-239c0479158f.jpg')">
+                                    <img src="./img/813764ea-d48f-487a-bbf4-239c0479158f.jpg" class="w-full h-full object-cover" alt="[Мініатюра ідеального шва сходинок]">
+                                </button>
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg')">
+                                    <img src="./img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" class="w-full h-full object-cover" alt="[Мініатюра загального вигляду з туями]">
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Особливості роботи (іконки) -->
-                        <div class="space-y-3">
-                            <h4 class="font-bold text-brandDark text-sm sm:text-base uppercase tracking-wider">Технологічні фішки цього об'єкта:</h4>
-                            <ul class="space-y-2 text-xs sm:text-sm text-slate-600">
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-circle-check text-brandOrange"></i>
-                                    <span class="editable" id="case-1-feat-1">Запил під $45^\circ$ на клумбах без пластикових куточків</span>
+                        <!-- Опис характеристик кейсу -->
+                        <div class="lg:col-span-5 space-y-6">
+                            <span class="inline-block bg-orange-100 text-brandOrange font-bold text-xs px-3 py-1 rounded-full uppercase tracking-wider editable" id="case-1-location">Кейс: котедж, Брюховичі</span>
+                            <h3 class="font-space font-bold text-xl sm:text-2xl text-brandDark editable" id="case-1-title">Вхідна група та сходи</h3>
+                            
+                            <ul class="space-y-4 text-slate-600 text-sm sm:text-base">
+                                <li class="flex items-center gap-3">
+                                    <i class="fa-solid fa-expand-arrows-alt text-brandOrange w-5 flex-shrink-0"></i>
+                                    <span><strong>Площа укладання:</strong> <span class="editable" id="case-1-area">$18.5\text{ м}^2$</span></span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-circle-check text-brandOrange"></i>
-                                    <span class="editable" id="case-1-feat-2">Монтаж на високоеластичний клей класу S1 (для вулиці)</span>
+                                <li class="flex items-center gap-3">
+                                    <i class="fa-solid fa-shapes text-brandOrange w-5 flex-shrink-0"></i>
+                                    <span><strong>Матеріали:</strong> <span class="editable" id="case-1-materials">Морозостійкий керамограніт структурований</span></span>
                                 </li>
-                                <li class="flex items-center gap-2">
-                                    <i class="fa-solid fa-circle-check text-brandOrange"></i>
-                                    <span class="editable" id="case-1-feat-3">Двошарова гідроізоляція для запобігання відшаровуванню</span>
+                                <li class="flex items-center gap-3">
+                                    <i class="fa-solid fa-calendar-check text-brandOrange w-5 flex-shrink-0"></i>
+                                    <span><strong>Термін:</strong> <span class="editable" id="case-1-duration">10 робочих днів</span></span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <i class="fa-solid fa-wallet text-brandOrange w-5 flex-shrink-0"></i>
+                                    <span><strong>Бюджет роботи:</strong> <span class="editable" id="case-1-budget">42 000 грн</span></span>
                                 </li>
                             </ul>
+                            
+                            <p class="text-xs sm:text-sm italic text-slate-500 border-l-2 border-brandOrange pl-4 editable" id="case-1-quote">
+                                "Виконано укладання на складних радіусних сходинках, інтегровано вбудовані вуличні клумби з ювелірним підрізом зовнішніх кутів під $45^\circ$."
+                            </p>
                         </div>
-                    </article>
 
+                    </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- 4. ЕТАПИ СПІВПРАЦІ (STEPS) -->
-        <section id="steps" class="py-16 md:py-24 bg-brandDark text-white relative overflow-hidden">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(234,88,12,0.08),transparent_40%)]" aria-hidden="true"></div>
+        <!-- 4. ЕТАПИ СПІВПРАЦІ -->
+        <section id="steps" class="py-16 md:py-24 bg-brandDark text-white relative overflow-hidden w-full">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(234,88,12,0.08),transparent_40%)]"></div>
             
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16 space-y-4">
                     <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Як ми працюємо</span>
-                    <h2 class="font-space font-bold text-2xl sm:text-4xl editable" id="steps-title">4 чіткі кроки до вашого задоволення результатом</h2>
+                    <h2 class="font-space font-bold text-2xl sm:text-4xl text-white editable" id="steps-title">4 чіткі кроки до вашого задоволення результатом</h2>
                     <p class="text-slate-400 text-sm sm:text-base editable" id="steps-subtitle">Проста, зрозуміла та відкрита схема взаємодії без непередбачуваних сюрпризів.</p>
                 </div>
 
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     
+                    <!-- Крок 1 -->
                     <div class="relative space-y-4 border-l-2 border-brandOrange/30 pl-4 sm:border-l-0 sm:pl-0">
-                        <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50" aria-hidden="true">01</div>
+                        <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50">01</div>
                         <h3 class="text-lg sm:text-xl font-bold editable" id="step-title-1">Зручна заявка</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed editable" id="step-desc-1">
                             Дзвоните нам або заповнюєте форму на сайті. Обговорюємо обсяг, вид плитки та бажані терміни виконання робіт.
                         </p>
                     </div>
 
+                    <!-- Крок 2 -->
                     <div class="relative space-y-4 border-l-2 border-brandOrange/30 pl-4 sm:border-l-0 sm:pl-0">
-                        <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50" aria-hidden="true">02</div>
+                        <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50">02</div>
                         <h3 class="text-lg sm:text-xl font-bold editable" id="step-title-2">Безкоштовний замір</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed editable" id="step-desc-2">
                             Виїжджаємо на об'єкт з лазерним нівеліром, оцінюємо стан стін і складаємо детальний прозорий кошторис.
                         </p>
                     </div>
 
+                    <!-- Крок 3 -->
                     <div class="relative space-y-4 border-l-2 border-brandOrange/30 pl-4 sm:border-l-0 sm:pl-0">
-                        <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50" aria-hidden="true">03</div>
+                        <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50">03</div>
                         <h3 class="text-lg sm:text-xl font-bold editable" id="step-title-3">Процес укладання</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed editable" id="step-desc-3">
                             Готуємо основу, наносимо гідроізоляцію та укладаємо плитку відповідно до узгодженої схеми розкладки.
                         </p>
                     </div>
 
+                    <!-- Крок 4 -->
                     <div class="relative space-y-4 border-l-2 border-brandOrange/30 pl-4 sm:border-l-0 sm:pl-0">
-                        <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50" aria-hidden="true">04</div>
+                        <div class="text-4xl sm:text-5xl font-space font-bold text-slate-700/50">04</div>
                         <h3 class="text-lg sm:text-xl font-bold editable" id="step-title-4">Прибирання та здача</h3>
                         <p class="text-slate-400 text-xs sm:text-sm leading-relaxed editable" id="step-desc-4">
                             Змиваємо залишки затирки, пилососимо приміщення, виносимо будівельне сміття та здаємо вам абсолютно чисту ванну.
@@ -478,15 +426,16 @@
         </section>
 
         <!-- 5. ПРАЙС-ЛИСТ (PRICES) -->
-        <section id="prices" class="py-16 md:py-24 bg-white border-b border-slate-100">
+        <section id="prices" class="py-16 md:py-24 bg-white border-b border-slate-100 w-full">
             <div class="max-w-4xl mx-auto px-4 sm:px-6">
                 <div class="text-center mb-10 sm:mb-12 space-y-4">
                     <span class="text-brandOrange font-bold text-sm tracking-widest uppercase">Ціни на послуги</span>
                     <h2 class="font-space font-bold text-2xl sm:text-4xl text-brandDark editable" id="prices-title">Чесна вартість без прихованих платежів</h2>
-                    <p class="text-slate-500 text-sm sm:text-base editable" id="prices-subtitle">Фіксуємо фінальну вартість за квадратний метр. У вартість вже входить базова розмітка та підрізка.</p>
+                    <p class="text-slate-500 text-sm sm:text-base editable" id="prices-subtitle">Фіксуємо фінальну вартість за квадратний метр. У вартість вже входить розмітка та підрізка.</p>
                 </div>
 
-                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-xl w-full relative">
+                <!-- ОБГОРТКА ДЛЯ ТАБЛИЦІ (АДАПТОВАНА ПІД МОБІЛЬНІ) -->
+                <div class="overflow-hidden rounded-2xl border border-slate-100 shadow-xl w-full max-w-full relative">
                     
                     <!-- Кнопки керування прайсом (Доступні лише в режимі edit=true) -->
                     <div id="price-controls-ui" class="hidden p-4 bg-slate-50 border-b flex gap-3">
@@ -498,60 +447,40 @@
                         </button>
                     </div>
 
-                    <div class="overflow-x-auto w-full">
-                        <table class="w-full text-left border-collapse min-w-[600px]" id="prices-table" aria-label="Таблиця вартості послуг з укладання плитки">
+                    <div class="overflow-x-auto w-full max-w-full">
+                        <table class="w-full text-left border-collapse min-w-[600px] max-w-full" id="prices-table" aria-label="Таблиця вартості послуг з укладання плитки">
                             <thead>
                                 <tr class="bg-brandDark text-white">
-                                    <th class="py-4 sm:py-5 px-5 sm:px-6 font-space font-bold text-xs sm:text-sm tracking-wide uppercase">Найменування робіт</th>
-                                    <th class="py-4 sm:py-5 px-5 sm:px-6 font-space font-bold text-xs sm:text-sm tracking-wide uppercase w-24">Одиниця</th>
-                                    <th class="py-4 sm:py-5 px-5 sm:px-6 font-space font-bold text-xs sm:text-sm tracking-wide uppercase text-right w-32">Ціна</th>
+                                    <th class="py-4 sm:py-5 px-4 sm:px-6 font-space font-bold text-xs sm:text-sm tracking-wide uppercase">Найменування робіт</th>
+                                    <th class="py-4 sm:py-5 px-4 sm:px-6 font-space font-bold text-xs sm:text-sm tracking-wide uppercase w-24">Одиниця</th>
+                                    <th class="py-4 sm:py-5 px-4 sm:px-6 font-space font-bold text-xs sm:text-sm tracking-wide uppercase text-right w-32">Ціна</th>
                                 </tr>
                             </thead>
                             <tbody class="divide-y divide-slate-100 bg-white text-slate-700 text-sm sm:text-base" id="prices-table-body">
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Укладання плитки</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 1000грн</td>
+                                    <td class="py-4 px-4 sm:px-6 font-semibold text-brandDark editable">Грунтування стін та підлоги засобами глибокого проникнення</td>
+                                    <td class="py-4 px-4 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
+                                    <td class="py-4 px-4 sm:px-6 text-right font-bold text-brandOrange editable">від 40 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Вирізання отворів</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">шт.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 250 грн</td>
+                                    <td class="py-4 px-4 sm:px-6 font-semibold text-brandDark editable">Укладання керамічної плитки (стандарт до $60 \times 60$)</td>
+                                    <td class="py-4 px-4 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
+                                    <td class="py-4 px-4 sm:px-6 text-right font-bold text-brandOrange editable">від 500 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Фугування двох компоненною фугою</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 350 грн</td>
+                                    <td class="py-4 px-4 sm:px-6 font-semibold text-brandDark editable">Укладання керамограніту великого формату ($120 \times 60$)</td>
+                                    <td class="py-4 px-4 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
+                                    <td class="py-4 px-4 sm:px-6 text-right font-bold text-brandOrange editable">від 750 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Запил зовнішнього кута під $45^\circ$ (чистий мокрий різ)</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м.п.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">350 грн</td>
+                                    <td class="py-4 px-4 sm:px-6 font-semibold text-brandDark editable">Запил зовнішнього кута під $45^\circ$ (чистий мокрий різ)</td>
+                                    <td class="py-4 px-4 sm:px-6 text-slate-500 editable">м.п.</td>
+                                    <td class="py-4 px-4 sm:px-6 text-right font-bold text-brandOrange editable">350 грн</td>
                                 </tr>
                                 <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Комплексна двошарова гідроізоляція під  плитку </td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">250 грн</td>
-                                </tr>
-                                <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Гідроізол.стрічка </td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м.п.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">150 грн</td>
-                                </tr>
-                                <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Штукатурка і стяжка</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 500 грн</td>
-                                </tr>
-                                <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Силіконення швів</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м.п.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 150 грн</td>
-                                </tr>
-                                <tr class="hover:bg-slate-50 transition-colors">
-                                    <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable">Підрізання плитки під заводський шов</td>
-                                    <td class="py-4 px-5 sm:px-6 text-slate-500 editable">м.п.</td>
-                                    <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable">від 250 грн</td>
+                                    <td class="py-4 px-4 sm:px-6 font-semibold text-brandDark editable">Комплексна двошарова гідроізоляція з проклеюванням стрічок</td>
+                                    <td class="py-4 px-4 sm:px-6 text-slate-500 editable">м<sup>2</sup></td>
+                                    <td class="py-4 px-4 sm:px-6 text-right font-bold text-brandOrange editable">150 грн</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -565,11 +494,12 @@
         </section>
 
         <!-- 6. ІНТЕГРАЦІЯ З TELEGRAM ТА ФОРМА (CALCULATOR) -->
-        <section id="calculator" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+        <section id="calculator" class="py-16 md:py-24 px-4 sm:px-6 lg:px-8 w-full">
             <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl border border-slate-100 overflow-hidden lg:grid lg:grid-cols-12">
                 
+                <!-- Опис лід-магніту -->
                 <div class="bg-brandDark text-white p-6 sm:p-8 lg:col-span-5 flex flex-col justify-between relative overflow-hidden">
-                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(234,88,12,0.12),transparent_50%)]" aria-hidden="true"></div>
+                    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(234,88,12,0.12),transparent_50%)]"></div>
                     <div class="space-y-4 sm:space-y-6 relative z-10">
                         <span class="text-brandOrange font-bold text-xs tracking-wider uppercase">Швидкий прорахунок</span>
                         <h3 class="font-space font-bold text-2xl leading-tight editable" id="form-title">Розрахуйте бюджет за 2 хвилини</h3>
@@ -590,6 +520,7 @@
                     </div>
                 </div>
 
+                <!-- Форма зворотного зв'язку -->
                 <div class="p-6 sm:p-8 lg:col-span-7">
                     <form id="tg-form" class="space-y-5" aria-label="Форма замовлення розрахунку">
                         <div>
@@ -634,7 +565,8 @@
                         </button>
                     </form>
 
-                    <div id="toast" class="hidden mt-4 p-4 rounded-xl text-sm font-semibold flex items-center gap-3 transition-all duration-300" role="alert" aria-live="assertive">
+                    <!-- Віконце успішної відправки -->
+                    <div id="toast" class="hidden mt-4 p-4 rounded-xl text-sm font-semibold flex items-center gap-3 transition-all duration-300" role="alert">
                         <i id="toast-icon" class="fa-solid" aria-hidden="true"></i>
                         <span id="toast-message"></span>
                     </div>
@@ -646,49 +578,63 @@
     </main>
 
     <!-- ФУТЕР (FOOTER) -->
-    <footer class="bg-brandDark text-slate-300 py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-800" role="contentinfo">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 pb-12">
-            
-            <!-- Стовпчик 1: РІВЕНЬ. -->
-            <div class="space-y-4">
-                <span class="font-sans font-bold text-2xl text-white tracking-tight block">РІВЕНЬ.</span>
-                <p class="text-sm leading-relaxed text-slate-400 editable" id="footer-about-text">
-                    Плиточні роботи будь-якої складності у Львові та області. Договір, кошторис і чистота на об'єкті — за замовчуванням.
-                </p>
+    <footer class="bg-brandDark text-slate-400 py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-800 w-full" role="contentinfo">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-sm">
+                
+                <!-- Колонка 1: Про нас -->
+                <div class="space-y-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-brandOrange text-white rounded-lg flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-compass-drafting text-lg"></i>
+                        </div>
+                        <span class="font-space font-bold text-lg text-white tracking-tight">РІВЕНЬ.</span>
+                    </div>
+                    <p class="text-slate-400 leading-relaxed editable" id="footer-about-text">
+                        Професійні послуги з укладання плитки та великоформатного керамограніту. Гарантія геометричної точності, чистоти під час роботи та дотримання термінів.
+                    </p>
+                </div>
+
+                <!-- Колонка 2: Контакти -->
+                <div class="space-y-4">
+                    <h4 class="font-space font-bold text-white text-base tracking-wide uppercase">Контакти для зв'язку</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-brands fa-telegram text-brandOrange text-lg"></i>
+                            <a href="https://t.me/riven_lviv_tile" class="hover:text-brandOrange transition-colors editable" id="footer-tg-link">@riven_lviv_tile</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-brandOrange"></i>
+                            <a href="tel:+380679932110" class="hover:text-brandOrange transition-colors editable" id="footer-phone-text">(067) 993-21-10</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Колонка 3: Графік -->
+                <div class="space-y-4">
+                    <h4 class="font-space font-bold text-white text-base tracking-wide uppercase font-space">Графік та Заміри</h4>
+                    <ul class="space-y-2">
+                        <li class="editable" id="footer-schedule-days">Пн – Сб: з 8:00 до 20:00</li>
+                        <li class="editable" id="footer-schedule-sunday">Нд: вихідний</li>
+                        <li class="text-xs text-brandOrange font-bold flex items-center gap-2 mt-2">
+                            <span class="w-1.5 h-1.5 bg-brandOrange rounded-full animate-ping"></span>
+                            <span class="editable" id="footer-survey-info">ВИЇЗД НА ЗАМІР — БЕЗКОШТОВНО</span>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
 
-            <!-- Стовпчик 2: КОНТАКТИ -->
-            <div class="space-y-4">
-                <span class="font-sans font-bold text-sm text-white tracking-wider uppercase block">Контакти</span>
-                <ul class="space-y-3 text-sm text-slate-400">
-                    <li>
-                        <a href="tel:+380679932110" class="hover:text-brandOrange transition-colors block font-semibold text-white text-base"><span class="editable" id="footer-phone-text">(067) 993-21-10</span></a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/riven_lviv_tile" target="_blank" class="hover:text-brandOrange transition-colors block">Telegram: <span class="editable" id="footer-tg-username">@riven_lviv_tile</span></a>
-                    </li>
-                    <li>Львів і область</li>
-                </ul>
+            <!-- Нижня лінія з копірайтом -->
+            <div class="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+                <p class="editable" id="footer-copyright">© 2026 РІВЕНЬ. Усі права збережено.</p>
+                <p class="text-slate-500 italic">Сайт-приклад для локального бізнесу</p>
             </div>
-
-            <!-- Стовпчик 3: ГРАФІК -->
-            <div class="space-y-4">
-                <span class="font-sans font-bold text-sm text-white tracking-wider uppercase block">Графік</span>
-                <ul class="space-y-2 text-sm text-slate-400">
-                    <li class="editable" id="footer-schedule-days">Пн–Сб: 08:00–20:00</li>
-                    <li class="editable" id="footer-schedule-sunday">Нд: за домовленістю</li>
-                    <li class="text-brandOrange font-semibold pt-1 editable" id="footer-survey-info">Виїзд на замір — безкоштовно</li>
-                </ul>
-            </div>
-            
-        </div>
-
-        <!-- Нижня плашка з розділювачем -->
-        <div class="max-w-7xl mx-auto pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-            <p class="editable" id="footer-copyright">© 2026 РІВЕНЬ. Плиточні роботи у Львові.</p>
         </div>
     </footer>
 
+
+    <!-- БЕЗПЕЧНА АДМІН-ПАНЕЛЬ ВІЗУАЛЬНОГО РЕДАКТОРА (Активна при ?edit=true) -->
     <div id="admin-editor-panel" class="hidden fixed bottom-0 left-0 right-0 z-50 bg-slate-900 text-white border-t-4 border-brandOrange p-5 shadow-2xl">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             
@@ -717,40 +663,37 @@
         </div>
     </div>
 
-    <!-- СКРИПТ: Телеграм-бот та Інтерактивний Слайдер -->
+
+    <!-- СКРИПТИ -->
     <script>
         /* =======================================================
            1. ІНТЕРАКТИВНА ГАЛЕРЕЯ КЕЙСІВ
            ======================================================= */
-        document.querySelectorAll('.project-gallery').forEach(gallery => {
+        function switchGalleryImage(btn, imageUrl) {
+            const gallery = btn.closest('.project-gallery');
             const mainImg = gallery.querySelector('.main-gallery-image');
-            const thumbs = gallery.querySelectorAll('.thumb-button');
             
-            thumbs.forEach(thumb => {
-                thumb.addEventListener('click', () => {
-                    // 1. Скидаємо рамки з усіх мініатюр у цій галереї
-                    thumbs.forEach(t => {
-                        t.classList.remove('border-brandOrange', 'ring-2', 'ring-brandOrange');
-                        t.classList.add('border-transparent');
-                    });
-                    
-                    // 2. Додаємо активну рамку на вибрану мініатюру
-                    thumb.classList.remove('border-transparent');
-                    thumb.classList.add('border-brandOrange', 'ring-2', 'ring-brandOrange');
-                    
-                    // 3. Плавно змінюємо зображення через легкий фейд-ефект
-                    mainImg.style.opacity = '0.3';
-                    setTimeout(() => {
-                        mainImg.src = thumb.dataset.src;
-                        mainImg.style.opacity = '1';
-                    }, 150);
-                });
-            });
-        });
+            // Плавне зникнення
+            mainImg.classList.add('opacity-0');
+            
+            setTimeout(() => {
+                mainImg.src = imageUrl;
+                // Плавна поява
+                mainImg.classList.remove('opacity-0');
+            }, 150);
 
+            // Оновлення активного статусу кнопок
+            const buttons = gallery.querySelectorAll('.thumbnail-btn');
+            buttons.forEach(b => {
+                b.classList.remove('border-brandOrange');
+                b.classList.add('border-transparent');
+            });
+            btn.classList.add('border-brandOrange');
+            btn.classList.remove('border-transparent');
+        }
 
         /* =======================================================
-           2. МОБІЛЬНЕ МЕНЮ НАВІГАЦІЇ
+           2. МОБІЛЬНЕ МЕНЮ НАВІГАЦІЯ
            ======================================================= */
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenuIcon = document.getElementById('mobile-menu-icon');
@@ -772,7 +715,6 @@
 
         mobileMenuBtn.addEventListener('click', toggleMobileMenu);
 
-        // Закриття меню при натисканні на посилання
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
@@ -781,12 +723,11 @@
             });
         });
 
-
         /* =======================================================
-           3. ІНТЕГРАЦІЯ З TELEGRAM BOT API
+           3. ТЕЛЕГРАМ-БОТ ДЛЯ ФОРМИ ЗВОРОТНОГО ЗВ'ЯЗКУ
            ======================================================= */
-        const TG_BOT_TOKEN = '8964409800:AAGizrRxGyD6dm4Rv7elZ18KKGFmNcAQi6E'; 
-        const TG_CHAT_ID = '5589751708';
+        const TG_BOT_TOKEN = '8964409800:AAGizrRxGyqS0p85LWeQY_e_j-wN_x6KAs8'; 
+        const TG_CHAT_ID = '5589751708'; 
 
         const form = document.getElementById('tg-form');
         const submitBtn = document.getElementById('submit-btn');
@@ -802,7 +743,7 @@
             const area = document.getElementById('client-area').value || 'Не вказана';
 
             const messageText = `
-🧱 *Нове замовлення на сайті плиточника!*
+🧱 *Нове замовлення на сайті РІВЕНЬ!*
 👤 *Клієнт:* ${name}
 📞 *Телефон:* ${phone}
 📐 *Площа об'єкту:* ${area} м²
@@ -810,7 +751,7 @@
             `.trim();
 
             submitBtn.disabled = true;
-            submitBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Відправка запиту...`;
+            submitBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Відправка...`;
 
             try {
                 const response = await fetch(`https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`, {
@@ -841,27 +782,6 @@
         });
 
         function showToast(isSuccess, text) {
-            toast.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800');
-            
-            if (isSuccess) {
-                toast.classList.add('bg-green-100', 'text-green-800');
-                toastIcon.className = 'fa-solid fa-circle-check text-green-600';
-            } else {
-                toast.classList.add('bg-red-100', 'text-red-800');
-                toastIcon.className = 'fa-solid fa-circle-exclamation text-red-600';
-            }
-            
-            toastMessage.textContent = text;
-            
-            setTimeout(() => {
-                toast.classList.add('hidden');
-            }, 6000);
-        }
-
-        /* =======================================================
-           4. ЛОГІКА ВІЗУАЛЬНОГО РЕДАКТОРА (?edit=true)
-           ======================================================= */
-         function showToast(isSuccess, text) {
             toast.classList.remove('hidden', 'bg-green-100', 'text-green-800', 'bg-red-100', 'text-red-800');
             if (isSuccess) {
                 toast.classList.add('bg-green-100', 'text-green-800');
@@ -904,9 +824,9 @@
             const newRow = document.createElement('tr');
             newRow.className = "hover:bg-slate-50 transition-colors";
             newRow.innerHTML = `
-                <td class="py-4 px-5 sm:px-6 font-semibold text-brandDark editable editable-active" contenteditable="true">Нова послуга (впишіть назву)</td>
-                <td class="py-4 px-5 sm:px-6 text-slate-500 editable editable-active" contenteditable="true">м<sup>2</sup></td>
-                <td class="py-4 px-5 sm:px-6 text-right font-bold text-brandOrange editable editable-active" contenteditable="true">від 100 грн</td>
+                <td class="py-4 px-4 sm:px-6 font-semibold text-brandDark editable editable-active" contenteditable="true">Нова послуга (впишіть назву)</td>
+                <td class="py-4 px-4 sm:px-6 text-slate-500 editable editable-active" contenteditable="true">м<sup>2</sup></td>
+                <td class="py-4 px-4 sm:px-6 text-right font-bold text-brandOrange editable editable-active" contenteditable="true">від 100 грн</td>
             `;
             tbody.appendChild(newRow);
         }
@@ -939,15 +859,26 @@
             statusMsg.textContent = "Надсилання файлів...";
             statusMsg.className = "text-xs block mt-1 text-sky-400";
 
-            // Створюємо повний чистий знімок коду сторінки, вирізаючи адмінські UI елементи перед збереженням
+            // Створюємо клонований документ для очищення перед відправкою
             const cleanDoc = document.cloneNode(true);
             
+            // ЗАМІСТЬ ВИДАЛЕННЯ: просто ховаємо адмінку та елементи керування прайсом у збереженому коді
             const editorUi = cleanDoc.getElementById('admin-editor-panel');
-            if (editorUi) editorUi.remove();
+            if (editorUi) {
+                editorUi.classList.add('hidden');
+                // Очищуємо поля пароля та статусу у збереженому файлі для безпеки
+                const savedPasswordInput = editorUi.querySelector('#admin-password-input');
+                if (savedPasswordInput) savedPasswordInput.value = '';
+                const savedStatusMsg = editorUi.querySelector('#admin-status-msg');
+                if (savedStatusMsg) savedStatusMsg.textContent = '';
+            }
 
             const priceControls = cleanDoc.getElementById('price-controls-ui');
-            if (priceControls) priceControls.remove();
+            if (priceControls) {
+                priceControls.classList.add('hidden');
+            }
 
+            // Повертаємо всі редаговані елементи до початкового стану (прибираємо contenteditable та підсвітку штрихами)
             cleanDoc.querySelectorAll('.editable').forEach(el => {
                 el.removeAttribute('contenteditable');
                 el.classList.remove('editable-active');
@@ -963,7 +894,15 @@
                     body: JSON.stringify({ password, html: cleanHtml })
                 });
 
-                const result = await response.json();
+                let result;
+                const contentType = response.headers.get("content-type");
+
+                if (contentType && contentType.includes("application/json")) {
+                    result = await response.json();
+                } else {
+                    const rawText = await response.text();
+                    result = { message: rawText || `Помилка сервера з кодом ${response.status}` };
+                }
 
                 if (response.ok) {
                     statusMsg.textContent = "Сайт успішно оновлено!";
