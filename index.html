@@ -111,11 +111,11 @@
             background-color: rgba(234, 88, 12, 0.05);
         }
         @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto; }
+            html { scroll-smooth: auto; }
         }
     </style>
 </head>
-<body class="bg-brandBg font-sans text-slate-700 tiling-grid min-h-screen antialiased  overflow-x-hidden">
+<body class="bg-brandBg font-sans text-slate-700 tiling-grid min-h-screen antialiased pb-12 overflow-x-hidden">
 
     <!-- НАВІГАЦІЙНА ПАНЕЛЬ (HEADER) -->
     <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm w-full" role="banner">
@@ -227,7 +227,7 @@
                 <div class="lg:col-span-6 mt-10 lg:mt-0">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border-4 border-white aspect-[4/3] md:aspect-[16/10] lg:aspect-auto lg:h-[480px]">
                         <img 
-                            src="./img/banner.jpg" 
+                            src="f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" 
                             alt="Професійне укладання великоформатної плитки у Львові" 
                             loading="eager"
                             decoding="async"
@@ -312,7 +312,7 @@
                         <div class="lg:col-span-7 space-y-4 project-gallery max-w-full overflow-hidden" id="case-1-gallery">
                             <div class="relative w-full h-[240px] sm:h-[450px] overflow-hidden rounded-2xl shadow-md border">
                                 <img 
-                                    src="./img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" 
+                                    src="f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" 
                                     alt="Головне фото об'єкту" 
                                     class="w-full h-full object-cover transition-all duration-300 main-gallery-image"
                                 >
@@ -320,20 +320,20 @@
                             
                             <!-- Рядок мініатюр (ОБМЕЖЕНИЙ МАКСИМАЛЬНОЮ ШИРИНОЮ) -->
                             <div class="flex gap-2.5 overflow-x-auto pb-2 scrollbar-thin w-full max-w-full">
-                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-brandOrange flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/8d7f9c87-682a-4b25-ba7f-5266a9f03f61.jpg')">
-                                    <img src="./img/8d7f9c87-682a-4b25-ba7f-5266a9f03f61.jpg" class="w-full h-full object-cover" alt="[Мініатюра готової вхідної групи]">
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-brandOrange flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, 'f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg')">
+                                    <img src="f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" class="w-full h-full object-cover" alt="[Мініатюра готової вхідної групи]">
                                 </button>
-                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/667eff75-0b04-4489-bcb3-e52e61570a8e.jpg')">
-                                    <img src="./img/667eff75-0b04-4489-bcb3-e52e61570a8e.jpg" class="w-full h-full object-cover" alt="[Мініатюра процесу запилу під 45]">
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, 'image_acaf04.jpg')">
+                                    <img src="image_acaf04.jpg" class="w-full h-full object-cover" alt="[Мініатюра процесу запилу під 45]">
                                 </button>
-                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg')">
-                                    <img src="./img/c62fe7a0-1237-4c66-a4b0-29726b8ff4d8.jpg" class="w-full h-full object-cover" alt="[Мініатюра запилу кутів клумби]">
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, 'image_acb1ae.jpg')">
+                                    <img src="image_acb1ae.jpg" class="w-full h-full object-cover" alt="[Мініатюра запилу кутів клумби]">
                                 </button>
-                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/813764ea-d48f-487a-bbf4-239c0479158f.jpg')">
-                                    <img src="./img/813764ea-d48f-487a-bbf4-239c0479158f.jpg" class="w-full h-full object-cover" alt="[Мініатюра ідеального шва сходинок]">
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, 'image_acb1cd.jpg')">
+                                    <img src="image_acb1cd.jpg" class="w-full h-full object-cover" alt="[Мініатюра ідеального шва сходинок]">
                                 </button>
-                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, './img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg')">
-                                    <img src="./img/f0c14867-d856-4b53-9e04-9dfdc798a8d2.jpg" class="w-full h-full object-cover" alt="[Мініатюра загального вигляду з туями]">
+                                <button class="w-16 h-16 sm:w-24 sm:h-24 rounded-lg overflow-hidden border-2 border-transparent flex-shrink-0 thumbnail-btn" onclick="switchGalleryImage(this, 'image_acb1ed.jpg')">
+                                    <img src="image_acb1ed.jpg" class="w-full h-full object-cover" alt="[Мініатюра загального вигляду з туями]">
                                 </button>
                             </div>
                         </div>
@@ -854,19 +854,29 @@
             // Тимчасово зберігаємо пароль локально в браузері
             localStorage.setItem('admin_password', password);
 
+            // КРИТИЧНИЙ ФІКС: Робимо клонування чистих DOM-елементів ДО того, як змінити стан активної кнопки на "spinner"
+            // Це гарантує, що у файлі index.html, який попрямує до GitHub-репозиторію, кнопка завжди лишиться активною та готовою до роботи.
+            const cleanDoc = document.cloneNode(true);
+
+            // Тепер візуально оновлюємо стан кнопки та повідомлення на поточному екрані (поки йде запит до API)
             saveBtn.disabled = true;
             saveBtn.innerHTML = `<i class="fa-solid fa-spinner animate-spin"></i> Збереження...`;
             statusMsg.textContent = "Надсилання файлів...";
             statusMsg.className = "text-xs block mt-1 text-sky-400";
-
-            // Створюємо клонований документ для очищення перед відправкою
-            const cleanDoc = document.cloneNode(true);
             
-            // ЗАМІСТЬ ВИДАЛЕННЯ: просто ховаємо адмінку та елементи керування прайсом у збереженому коді
+            // Ретельно очищуємо та ховаємо адмінку всередині клону перед збереженням у репозиторій
             const editorUi = cleanDoc.getElementById('admin-editor-panel');
             if (editorUi) {
                 editorUi.classList.add('hidden');
-                // Очищуємо поля пароля та статусу у збереженому файлі для безпеки
+                
+                // Про всяк випадок примусово робимо кнопку активною всередині клону HTML
+                const clonedSaveBtn = editorUi.querySelector('#admin-save-btn');
+                if (clonedSaveBtn) {
+                    clonedSaveBtn.removeAttribute('disabled');
+                    clonedSaveBtn.innerHTML = `<i class="fa-solid fa-cloud-arrow-up text-sm"></i> <span>Зберегти зміни на сайті</span>`;
+                }
+
+                // Очищуємо поля пароля та тексту статусу всередині клону
                 const savedPasswordInput = editorUi.querySelector('#admin-password-input');
                 if (savedPasswordInput) savedPasswordInput.value = '';
                 const savedStatusMsg = editorUi.querySelector('#admin-status-msg');
@@ -915,6 +925,7 @@
                 statusMsg.textContent = "Помилка: " + err.message;
                 statusMsg.className = "text-xs block mt-1 text-red-500 font-bold";
             } finally {
+                // Після завершення або помилки запиту повертаємо кнопку на поточному екрані в активний стан
                 saveBtn.disabled = false;
                 saveBtn.innerHTML = `<i class="fa-solid fa-cloud-arrow-up text-sm"></i> <span>Зберегти зміни на сайті</span>`;
             }
