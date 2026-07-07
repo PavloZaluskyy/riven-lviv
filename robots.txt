@@ -1,0 +1,8 @@
+User-agent: * 
+Allow: /
+Allow: /images/
+Disallow: /?edit=
+Disallow: /?*edit=
+Disallow: /netlify/
+Disallow: /.netlify/
+Sitemap: https://riven-lviv.netlify.app/sitemap.xml
